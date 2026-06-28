@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default async function CollectionsPage() {
-  const collections = await getAllCollections();
+  const collections = await getAllCollections().catch(() => []);
 
   return (
     <div className="min-h-screen bg-white">

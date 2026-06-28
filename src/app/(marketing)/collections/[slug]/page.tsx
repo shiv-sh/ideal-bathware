@@ -13,7 +13,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const slugs = await getAllCollectionSlugs();
+  const slugs = await getAllCollectionSlugs().catch(() => []);
   return slugs.map((s) => ({ slug: s.slug }));
 }
 

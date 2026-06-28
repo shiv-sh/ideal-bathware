@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function TechnologyPage() {
-  const technologies = await getAllTechnologies();
+  const technologies = await getAllTechnologies().catch(() => []);
 
   const placeholderTechs = [
     { _id: "1", slug: "7d-flush", name: "7D Flush Technology", shortDescription: "360° directional flush ensures every inch is cleaned with powerful, silent efficiency.", fullDescription: "", icon: "", images: [], relatedProducts: [], createdAt: "", updatedAt: "" },
