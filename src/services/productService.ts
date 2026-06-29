@@ -1,5 +1,7 @@
 import { connectDB } from "@/lib/db";
 import { Product } from "@/lib/models/Product";
+import "@/lib/models/Collection";
+import "@/lib/models/Category";
 import type { IProduct } from "@/types/product";
 
 interface ProductFilters {
