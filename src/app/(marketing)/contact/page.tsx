@@ -12,12 +12,12 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Factory Address",
-    details: ["123 Industrial Area, Sector 5", "New Delhi — 110001, India"],
+    details: ["North Zone - Sheela Complex,", "Rawar Road Karnal - 132001"],
   },
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 98765 43210", "+91 11 2345 6789"],
+    details: ["+91 99968 86905"],
   },
   {
     icon: Mail,
